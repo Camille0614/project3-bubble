@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Bubbles</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #f0bbca;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bubble {
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .bubble1 {
+            width: 150px;
+            height: 150px;
+            top: 10%;
+            left: 10%;
+            animation-duration: 9s;
+        }
+
+        .bubble2 {
+            width: 80px;
+            height: 80px;
+            top: 35%;
+            left: 40%;
+            animation-duration: 7s;
+        }
+
+        .bubble3 {
+            width: 200px;
+            height: 200px;
+            top: 55%;
+            left: 70%;
+            animation-duration: 10s;
+        }
+
+        .bubble4 {
+            width: 100px;
+            height: 100px;
+            top: 70%;
+            left: 15%;
+            animation-duration: 8s;
+        }
+
+        .bubble5 {
+            width: 60px;
+            height: 60px;
+            top: 15%;
+            left: 75%;
+            animation-duration: 6s;
+        }
+
+        .bubble6 {
+            width: 120px;
+            height: 120px;
+            top: 75%;
+            left: 45%;
+            animation-duration: 11s;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px) translateX(0px);
+            }
+
+            50% {
+                transform: translateY(-20px) translateX(10px);
+            }
+
+            100% {
+                transform: translateY(10px) translateX(-10px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bubble bubble1"></div>
+    <div class="bubble bubble2"></div>
+    <div class="bubble bubble3"></div>
+    <div class="bubble bubble4"></div>
+    <div class="bubble bubble5"></div>
+    <div class="bubble bubble6"></div>
+</body>
+
+</html>
